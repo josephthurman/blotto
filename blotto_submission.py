@@ -97,9 +97,9 @@ if __name__ == "__main__":
     candidates_100 = generate_strategy_list(1500, strategy_100_generator)
     candidates_110 = generate_strategy_list(1500, strategy_110_generator)
 
-    (best_90, best_90_score) = find_best_strategy(candidates_90, bootstrap_sample, 10, 500)
-    (best_100, best_100_score) = find_best_strategy(candidates_100, bootstrap_sample, 10, 500)
-    (best_110, best_110_score) = find_best_strategy(candidates_110, bootstrap_sample, 10, 500)
+    (best_90, best_90_score) = find_best_strategy(candidates_90, bootstrap_sample, 25, 500)
+    (best_100, best_100_score) = find_best_strategy(candidates_100, bootstrap_sample, 25, 500)
+    (best_110, best_110_score) = find_best_strategy(candidates_110, bootstrap_sample, 25, 500)
 
     print("Stategy for 90 Soldiers: " + str(list(best_90)))
     print("Stategy for 100 Soldiers: " + str(list(best_100)))
